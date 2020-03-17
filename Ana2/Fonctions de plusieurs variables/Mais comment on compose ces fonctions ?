@@ -1,1 +1,2 @@
- 
+Il faut voir R^n comme le n produit de R (oui cest tautologique) 
+et voir une fonction de R^n dans R comme n fils qui partent de chaque facteurs de R^n et qui se rejoignent en R. Alors il est visible qu'on peut composer q fonctions de R^n vers R avec une fonction de R^q vers R
