@@ -2,3 +2,10 @@ Blablabla gated clock -> ON NE MET QUE DES CLOCKS SANS GATE DESSUS DANS LE PORT 
 
 blablabla without label -> on doit annotate CHAQUE sous circuit manuellement
 
+Si vous commmencez tt juste le TP:
+Un conseil: pour chaque sous-circuit ou t'utilises des flips flops, autogénère la transition logic dans un autre sous-circuit que tu pourras réinjecter dans celui avec les flips flops
+
+Aussi, pour éviter les surprises: ne renomme pas les components de la template, n'utilise pas de gated clocks, et n'utilise pas de flips flops sur rising edge ET sur falling edge en mm temps (soit les uns soit les autres) sinon ton circuit sera refusé par la compilateur
+
+Et pour la question 3, jte conseille d'utiliser un SR Latch "fait maison" plutôt que les inputs S et R d'un flip flop car on n'a pas encore vu en cours ce qu'ils font exactement
+

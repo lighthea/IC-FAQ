@@ -1,1 +1,9 @@
- 
+EVDS: Mettre les y et dy d'un côté, les x et dx de l'autre, puis intégrer
+EDL1: y'(x) + p(x)y(x) = f(x)
+    1) Résoudre l'équation homogène associée (une EDVS), trouver une solution non nulle yh(x) (sans le C devant)
+       où yh(x) = exp(-P(x)) où P(x) est UNE primitive de p(x)
+    2) Trouver une solution particulière par:
+        a) Méthode de la variation de la constante: yp(x) = yh(x) * Une primitive de (exp(P(x))*f(x))
+        b) Méthode des coefficients indéterminés: Possible seulement si p(x) = k, une constante réelle
+           (cours de Wittwer à ce sujet: https://moodle.epfl.ch/pluginfile.php/2746378/mod_resource/content/1/Semaine_02_14_lundi_v01.pdf page 4)
+EDL2: well, au secours

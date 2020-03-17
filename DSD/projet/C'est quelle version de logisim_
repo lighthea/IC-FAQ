@@ -1,1 +1,8 @@
 2.15 
+Si le circuit a été fait en 3.3 -> utiliser le preprocessor du moodle:
+*Faire un backup du circuit au cas où
+*Placer v3_3_preprocessor.py dans le répertoire contenant le circuit
+*Ouvrir le terminal/command prompt
+*Utiliser cd et ls pour accéder au répertoire par le terminal/cmd prompt
+*Taper python
+*Taper v3_3_preprocessor.py tp34.circ (ou remplacer tp34.circ par le nom du fichier)
