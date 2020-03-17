@@ -1,2 +1,0 @@
-Une fonction continue dans ses n parametres ne l'est pas forcément.
-Pour prouver qu'une fonction n'est pas continue on la fait passer par un arc qui passera par ses discontinuités pour montrer qu'elle en a ( On cherche a montrer quelle n'est pas continue, si on réussi a la faire passer par un chemin qui exhibe ces discontinuités on a gagné)
