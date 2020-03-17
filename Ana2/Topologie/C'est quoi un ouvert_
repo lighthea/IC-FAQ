@@ -1,0 +1,5 @@
+Cest la definition rigoureuse de proximité, etre proche c'est une notion qui à deux propriétés :
+
+Si on prend une règle pour mesurer la distance cette distance sera petite mais à la fois elle est non nulle puisque vous etes proche et pas égal (pensez à epsilon > 0, cest exactement la meme chose, proche sans jamais toucher)
+
+Donc dans cette ligne de pensée un intervalle ouvert c'est un intervalle qui a des points infiniments proches de ses bornes, de même une boule ouverte c'est une boule qui a des points infiniments proches de ses bords.
