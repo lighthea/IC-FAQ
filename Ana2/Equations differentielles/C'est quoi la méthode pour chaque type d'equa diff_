@@ -6,4 +6,18 @@ EDL1: y'(x) + p(x)y(x) = f(x)
         a) Méthode de la variation de la constante: yp(x) = yh(x) * Une primitive de (exp(P(x))*f(x))
         b) Méthode des coefficients indéterminés: Possible seulement si p(x) = k, une constante réelle
            (cours de Wittwer à ce sujet: https://moodle.epfl.ch/pluginfile.php/2746378/mod_resource/content/1/Semaine_02_14_lundi_v01.pdf page 4)
-EDL2: well, au secours
+
+EDL2: 
+
+    1) Trouver une solution à l'équation homogène (intuition)
+    2) Trouver la deuxieme solution par variation des constantes
+    
+    Deux méthodes : 
+        1) La méthode du Wronskien ( v(t) = c1(t)*v1(t)+c2(t)*v2(t))
+            a)on pose l'ansatz avec c1(t)'*v1(t) + c2(t)'v2(t) = 0
+            b)On rentre ca dans l'équation et ca simplifie
+            c)on integre -f(t)v2(t)/Wronskien pour avoir c1
+            d)on integre f(t)v1(t)/Wronskien pour avoir c2
+
+        2) Les intégrales du livre 
+        
