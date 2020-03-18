@@ -9,3 +9,5 @@ Aussi, pour éviter les surprises: ne renomme pas les components de la template,
 
 Et pour la question 3, jte conseille d'utiliser un SR Latch "fait maison" plutôt que les inputs S et R d'un flip flop car on n'a pas encore vu en cours ce qu'ils font exactement
 
+Tout ce qui se passe avant le premier reet ne compte pas
+
