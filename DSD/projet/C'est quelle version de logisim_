@@ -1,4 +1,6 @@
-2.15 
+2.15
+La version avec Combinational Analysis / Analyze circuit est dans le root du répertoire DSD
+
 Si le circuit a été fait en 3.3 -> utiliser le preprocessor du moodle:
 *Faire un backup du circuit au cas où
 *Placer v3_3_preprocessor.py dans le répertoire contenant le circuit
