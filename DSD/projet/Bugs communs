@@ -7,7 +7,7 @@ Un conseil: pour chaque sous-circuit ou t'utilises des flips flops, autogénère
 
 Aussi, pour éviter les surprises: ne renomme pas les components de la template, n'utilise pas de gated clocks, et n'utilise pas de flips flops sur rising edge ET sur falling edge en mm temps (soit les uns soit les autres) sinon ton circuit sera refusé par la compilateur
 
-Et pour la question 3, jte conseille d'utiliser un SR Latch "fait maison" plutôt que les inputs S et R d'un flip flop car on n'a pas encore vu en cours ce qu'ils font exactement
+Et pour la question 3, jte conseille d'utiliser un SR Latch "fait maison"(celui de la semaine 2) plutôt que les inputs S et R d'un flip flop car on n'a pas encore vu en cours ce qu'ils font exactement
 
 Tout ce qui se passe avant le premier reet ne compte pas
 
