@@ -2,6 +2,8 @@ Blablabla gated clock -> ON NE MET QUE DES CLOCKS SANS GATE DESSUS DANS LE PORT 
 
 blablabla without label -> on doit annotate CHAQUE sous circuit manuellement
 
+Ne pas rajouter l'éléments d'outputs (par ex une led ou comme ça) sur le fichier main (avec les 7segments...)
+
 Si vous commmencez tt juste le TP:
 Un conseil: pour chaque sous-circuit ou t'utilises des flips flops, autogénère la transition logic dans un autre sous-circuit que tu pourras réinjecter dans celui avec les flips flops
 
@@ -9,7 +11,8 @@ Aussi, pour éviter les surprises: ne renomme pas les components de la template,
 
 Et pour la question 3, jte conseille d'utiliser un SR Latch "fait maison"(celui de la semaine 2) plutôt que les inputs S et R d'un flip flop car on n'a pas encore vu en cours ce qu'ils font exactement
 
-Tout ce qui se passe avant le premier reet ne compte pas
+Tout ce qui se passe avant le premier reset ne compte pas
+
+Si vous utilisez uniquement les inputs S et R sur un FlipFlop, il ne faut pas brancher la clock (sinon ça peut attribuer une valeur aléatoire lors d'un rising edge)
 
 Comment on fait pour se connecter au site du grader? C’est https://digsys.epfl.ch non? Oui il faut utiliser le VPN
-
