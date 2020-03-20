@@ -1,10 +1,4 @@
 2.15
 La version avec Combinational Analysis / Analyze circuit est dans le root du répertoire DSD
 
-Si le circuit a été fait en 3.3 -> utiliser le preprocessor du moodle:
-*Faire un backup du circuit au cas où
-*Placer v3_3_preprocessor.py dans le répertoire contenant le circuit
-*Ouvrir le terminal/command prompt
-*Utiliser cd et ls pour accéder au répertoire par le terminal/cmd prompt
-*Taper python
-*Taper v3_3_preprocessor.py tp34.circ (ou remplacer tp34.circ par le nom du fichier)
+Si fait en 3.3: pas de souci, votre circuit sera preprocess automatiquement en 2.15 au moment du rendu
