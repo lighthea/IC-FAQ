@@ -1,0 +1,32 @@
+Transform.affine crée cette matrice:
+[  Mxx  Mxy  Tx  ] = A dans la suite
+[  Myx  Myy  Ty  ]
+
+Transform.transform applique ce produit matriciel au vecteur (x,y), en rajoutant une 3ème coordonnée de valeur 1
+à ce vecteur (x,y):
+A*(x,y,1) = [ Mxx*x + Mxy*y + Tx ]
+            [ Myx*x + Myy*y + Ty ]
+
+Les termes tx et ty sont des coefficients de translation: en plus de modifier la distance à l'origine
++ l'angle que fait un point par rapport à l'origine (qui est le coin supérieur gauche),
+ tx et ty vont le déplacer encore de tx unités vers le bas et ty unités vers la droite
+ du coup transform est pratique si tu veux PLACER un POINT à l'écran,
+ Mais que faire si tu veux transformer un VECTEUR? Vu qu'il n'y a pas de sens à 'translater' un vecteur
+  (vu qu'il n'est lié à aucun point particulier), c'est là qu'on utilise:
+
+Transform.deltaTransform((x,y)):
+Avec A' = [ Mxx Mxy ]
+          [ Myx Myy ] (on a viré les termes de translation)
+
+A' * (x,y) = [ Mxx*x + Mxy*y ]
+             [ Myx*x + Myy*y ]
+
+ L'occasion majeure dans l'étape 8 où on a besoin de transformer des vecteurs et non des points,
+ c'est pour transformer des distances (ie des rayons)
+ Du coup si tu veux transformer la distance 'diameter' (ie la formule du diamètre donnée par le prof pour les
+ étoiles/planètes, ou l'angular size pour lune/soleil) tu peux par ex appliquer A.deltaTransform(diameter, 0)
+ (car ce vecteur a une norme = diameter)
+ Tu reçois un vecteur:
+ ( Mxx * diameter, Myx * diameter)
+ La norme de ce vecteur ben c'est le diamètre transformé, que tu peux utiliser ensuite dans fillOval par ex pour
+  dessiner les corps célestes.
